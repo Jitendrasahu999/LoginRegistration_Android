@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:src="@drawable/user_reg"/>
+
+        <TextView
+            android:id="@+id/text_view_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Employee Registration"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_emp_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Employee Id:"
+            android:textSize="19dp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/editText_emp_id_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Auto increment id"
+            android:inputType="number"></EditText>
+
+        <TextView
+            android:id="@+id/textView_emp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="19dp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/editText_emp_name_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter the Name"></EditText>
+
+        <TextView
+            android:id="@+id/textView_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Mail:"
+            android:textSize="19dp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/editText_email_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter the Email"></EditText>
+
+        <TextView
+            android:id="@+id/textView_emp_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="19dp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/editText_emp_password_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Enter the Password"></EditText>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button_singup"
+                android:onClick="addUser"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:background="#1ac1b6"
+                android:text="Sing Up"
+                android:textAllCaps="false"
+                android:textColor="#fffdfd"
+                android:textSize="15dp"></Button>
+
+            <Button
+                android:id="@+id/button_reset_reg"
+                android:layout_width="170dp"
+                android:layout_marginLeft="5dp"
+                android:background="#b13939"
+                android:text="Reset"
+                android:textAllCaps="false"
+                android:textColor="#fffdfd"
+                android:textSize="15dp"></Button>
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+
